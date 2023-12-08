@@ -15,21 +15,13 @@ main {
     padding: 10px;
 }
   
-aside{
-    border: 1px solid lightgrey;
-    padding: 10px;
-    background-color: white;
-}
-  
 main {
     display: grid;
     grid-template-columns: 3fr 1fr;
     grid-template-areas:
     "h h"
     "a n"
-    "a n"
-    "f f"
-    ;
+    "f f";
     gap: 10px;
 }
 
@@ -40,6 +32,9 @@ article {
     text-align: left;
 }
 
+.header{
+    margin: auto;
+}
 .termek {
     background-color: white;
     border-radius: 10px 10px 10px 10px;
@@ -55,16 +50,8 @@ article {
     border-radius: 5px 5px 5px 5px;
 }
 
-.kep img{
-    width: 100%;
-    border-radius: 10px 10px 10px 10px;
-}
-
-.box {
-    display: grid;
-    grid-template-columns: 70px 70px;
-    gap: 20px;
-    list-style-type: none;
+img{
+    width: 100px;
 }
 
 footer {
@@ -86,14 +73,7 @@ footer {
 article {
     grid-area:a
 }
-  
-aside#bal {
-    grid-area: b
-}
-  
-aside#jobb {
-    grid-area: j
-}
+
 
 nav ul {
     display: grid;
@@ -115,40 +95,43 @@ nav li a {
 table{
     border-collapse:collapse;
     width: auto;
+
 }
 
 th{
     border: 1px solid gray;
+    margin:auto; 
+    vertical-align:top;
 }
 
 td{
     border: 1px solid gray;
 
 }
+h1{
+    text-align: center;
+}
 
 @media screen and (max-width: 700px) {
     body {
-        background-color: blue;
         width: 100%;
         font-size: 3vw;
     }
     main {
         grid-template-columns: 3fr 1fr;
         grid-template-areas:
-        "h h"
-        "n n"
-        "a b"
-        "j j"
-        "f f";
+        "h"
+        "n"
+        "a"
+        "f";
     }
 }
-  
+ /* 
 @media screen and (max-width: 450px) {
     nav ul {
         grid-template-columns: 1fr;
     }
     body {
-        background-color: blue;
         width: 100%;
         font-size: 5vw;
     }
@@ -158,8 +141,6 @@ td{
         "h"
         "n"
         "a"
-        "j"
-        "b"
         "f";
     }
-}
+}*/
