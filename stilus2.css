@@ -14,22 +14,15 @@ main {
   background-color: rgb(231, 225, 236);
   padding: 10px;
 }
-
-aside {
-  border: 1px solid lightgrey;
-  padding: 10px;
-  background-color: white;
-}
-
+  
 main {
   display: grid;
   grid-template-columns: 3fr 1fr;
   grid-template-areas:
     "h h"
     "a n"
-    "a n"
     "f f";
-  gap: 10px;
+    gap: 10px;
 }
 
 article {
@@ -39,6 +32,9 @@ article {
   text-align: left;
 }
 
+.header{
+    margin: auto;
+}
 .termek {
   background-color: white;
   border-radius: 10px 10px 10px 10px;
@@ -54,16 +50,8 @@ article {
   border-radius: 5px 5px 5px 5px;
 }
 
-.kep img {
-  width: 100%;
-  border-radius: 10px 10px 10px 10px;
-}
-
-.box {
-  display: grid;
-  grid-template-columns: 70px 70px;
-  gap: 20px;
-  list-style-type: none;
+img{
+    width: 100px;
 }
 
 footer {
@@ -86,13 +74,6 @@ article {
   grid-area: a;
 }
 
-aside#bal {
-  grid-area: b;
-}
-
-aside#jobb {
-  grid-area: j;
-}
 
 nav ul {
   display: grid;
@@ -108,56 +89,78 @@ nav li {
 }
 
 nav li a {
-  text-decoration: none;
+    text-decoration: none;
+}
+  
+table{
+    border-collapse:collapse;
+    width: auto;
+
 }
 
-table {
-  border-collapse: collapse;
-  width: auto;
+th{
+    border: 1px solid gray;
+    margin:auto; 
+    vertical-align:top;
+    color: green;
 }
 
-th {
-  border: 1px solid gray;
-}
+
+td{
+    border: 1px solid gray;
+    color: green;
+    padding: 10px;
 
 td {
   border: 1px solid gray;
 }
 
-@media screen and (max-width: 700px) {
-  body {
-    background-color: blue;
-    width: 100%;
-    font-size: 3vw;
-  }
-  main {
-    grid-template-columns: 3fr 1fr;
-    grid-template-areas:
-      "h h"
-      "n n"
-      "a b"
-      "j j"
-      "f f";
-  }
+.nulladik{
+    background-color: yellow;
+    text-align: center;
 }
 
-@media screen and (max-width: 450px) {
-  nav ul {
-    grid-template-columns: 1fr;
-  }
-  body {
-    background-color: blue;
-    width: 100%;
-    font-size: 5vw;
-  }
-  main {
-    grid-template-columns: 1fr;
-    grid-template-areas:
-      "h"
-      "n"
-      "a"
-      "j"
-      "b"
-      "f";
-  }
+.elso{
+    background-color: aqua;
 }
+
+.masodik{
+    background-color: aquamarine;
+}
+
+h1{
+    text-align: center;
+}
+
+@media screen and (max-width: 700px) {
+    body {
+        width: 100%;
+        font-size: 3vw;
+    }
+    main {
+        grid-template-columns: 3fr 1fr;
+        grid-template-areas:
+        "h"
+        "n"
+        "a"
+        "f";
+    }
+}
+ /* 
+@media screen and (max-width: 450px) {
+    nav ul {
+        grid-template-columns: 1fr;
+    }
+    body {
+        width: 100%;
+        font-size: 5vw;
+    }
+    main {
+        grid-template-columns: 1fr;
+        grid-template-areas:
+        "h"
+        "n"
+        "a"
+        "f";
+    }
+}*/
