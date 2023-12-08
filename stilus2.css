@@ -1,8 +1,7 @@
 * {
-    /* az összes html elem */
     padding: 0;
     margin: 0;
-    box-sizing: border-box; /* szélességbe a padding és a border */
+    box-sizing: border-box;
 }
   
 body {
@@ -27,15 +26,14 @@ main {
     grid-template-columns: 3fr 1fr;
     grid-template-areas:
     "h h"
-    "n n"
-    "a j"
+    "a n"
+    "a n"
     "f f"
     ;
     gap: 10px;
 }
 
-article {
-    /*szülőelem*/ 
+article { 
     display:grid; 
     grid-gap: 10px; 
     grid-template-columns: 1fr 1fr 1fr 1fr;
@@ -90,14 +88,12 @@ article {
 }
   
 aside#bal {
-    grid-area: b;
+    grid-area: b
 }
   
 aside#jobb {
-    grid-area: j;
+    grid-area: j
 }
-  
-/* menü kialakítása */
 
 nav ul {
     display: grid;
@@ -116,8 +112,6 @@ nav li a {
     text-decoration: none;
 }
   
-/* töréspontokat, media query */
-/* tablet nézet */
 @media screen and (max-width: 700px) {
     body {
         background-color: blue;
@@ -135,7 +129,6 @@ nav li a {
     }
 }
   
-/* mobilon nézet */
 @media screen and (max-width: 450px) {
     nav ul {
         grid-template-columns: 1fr;
