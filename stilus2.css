@@ -11,8 +11,8 @@ body {
 }
 
 main {
-  background-color: rgb(231, 225, 236);
-  padding: 10px;
+    background-color: crimson;
+    padding: 10px;
 }
   
 main {
@@ -29,9 +29,6 @@ img{
     width: 100px;
 }
 
-footer {
-  background-color: white;
-}
 
 header {
   grid-area: h;
@@ -42,7 +39,9 @@ nav {
 }
 
 footer {
-  grid-area: f;
+    grid-area: f;
+    background-color: maroon;
+    text-align: center;
 }
 
 article {
@@ -51,26 +50,29 @@ article {
 
 
 nav ul {
-  display: grid;
-  grid-template-columns: 90px 90px 90px;
-  gap: 5px;
-  list-style-type: none;
+    display: grid;
+    grid-template-columns: 90px;
+    gap: 5px;
+    list-style-type: none;
+    background-color: maroon;
 }
 
 nav li {
-  text-align: center;
-  padding: 0px;
-  border: 0.5px solid lightgrey;
+    text-align: center;
+    padding: 0px;
+    border: 0.5px solid lightgrey;
+    background-color: green;
+    width: 100%;
 }
 
 nav li a {
     text-decoration: none;
+    color: maroon;
 }
   
 table{
     border-collapse:collapse;
     width: auto;
-
 }
 
 th{
@@ -86,7 +88,7 @@ td{
     border: 1px solid gray;
     color: green;
     padding: 10px;
-
+}
 td {
   border: 1px solid gray;
 }
@@ -107,6 +109,14 @@ td {
 h1{
     text-align: center;
 }
+
+.cim {
+    color: green;
+  }
+  
+  .cimke {
+    color: maroon;
+  }
 
 @media screen and (max-width: 700px) {
     body {
