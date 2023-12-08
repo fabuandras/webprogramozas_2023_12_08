@@ -83,7 +83,6 @@ th{
     padding: 10px;
 }
 
-
 td{
     border: 1px solid gray;
     color: green;
@@ -132,7 +131,7 @@ h1{
         "f";
     }
 }
- /* 
+
 @media screen and (max-width: 450px) {
     nav ul {
         grid-template-columns: 1fr;
@@ -149,4 +148,4 @@ h1{
         "a"
         "f";
     }
-}*/
+}
