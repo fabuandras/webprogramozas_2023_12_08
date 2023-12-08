@@ -1,217 +1,215 @@
 * {
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
 }
-  
+
 body {
-    width: 90%;
-    max-width: 900px;
-    margin: auto;
+  width: 90%;
+  max-width: 900px;
+  margin: auto;
+  font-family: "Times New Roman", Times, serif;
 }
 
 main {
-    background-color: rgb(231, 225, 236);
-    padding: 10px;
+  background-color: crimson;
+  padding: 10px;
 }
-  
-aside{
-    border: 1px solid lightgrey;
-    padding: 10px;
-    background-color: white;
+
+aside {
+  border: 1px solid lightgrey;
+  padding: 10px;
+  background-color: white;
 }
-  
+
 main {
-    display: grid;
-    grid-template-columns: 3fr 1fr;
-    grid-template-areas:
+  display: grid;
+  grid-template-columns: 3fr 1fr;
+  grid-template-areas:
     "h h"
-    "n n"
-    "a j"
-    "f f"
-    ;
-    gap: 10px;
+    "a n"
+    "f f";
+  gap: 10px;
 }
 
 article {
-    display:grid; 
-    grid-gap: 10px; 
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    text-align: left;
+  display: grid;
+  grid-gap: 10px;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  text-align: left;
 }
 
 .termek {
-    background-color: white;
-    border-radius: 10px 10px 10px 10px;
-    padding: 5px;
-    border: 1px solid lightgrey;
-    display:grid;
-    grid-template-rows: auto auto auto 20px;
+  background-color: white;
+  border-radius: 10px 10px 10px 10px;
+  padding: 5px;
+  border: 1px solid lightgrey;
+  display: grid;
+  grid-template-rows: auto auto auto 20px;
 }
 
 .ar {
-    text-align: center;
-    border: 1px solid lightgrey;
-    border-radius: 5px 5px 5px 5px;
+  text-align: center;
+  border: 1px solid lightgrey;
+  border-radius: 5px 5px 5px 5px;
 }
 
-.kep img{
-    width: 100%;
-    border-radius: 10px 10px 10px 10px;
+.kep img {
+  width: 100%;
+  border-radius: 10px 10px 10px 10px;
 }
 
 .box {
-    display: grid;
-    grid-template-columns: 70px 70px;
-    gap: 20px;
-    list-style-type: none;
+  display: grid;
+  grid-template-columns: 70px 70px;
+  gap: 20px;
+  list-style-type: none;
+}
+
+header {
+  grid-area: h;
+}
+
+nav {
+  grid-area: n;
 }
 
 footer {
-    background-color: white;
+  grid-area: f;
+  background-color: maroon;
+  text-align: center;
 }
-  
-header {
-    grid-area:h;
-}
-  
-nav {
-    grid-area:n;
-}
-  
-footer {
-    grid-area:f;
-}
-  
+
 article {
-    grid-area:a;
-    width: 100px;
+  grid-area: a;
+  width: 100px;
 }
-  
-aside#bal {
+
+/*aside#bal {
     grid-area: b;
 }
   
 aside#jobb {
     grid-area: j;
     width: 200px;
-}
-  
+}*/
+
 /* menü kialakítása */
 
 nav ul {
-    display: grid;
-    grid-template-columns: 90px;
-    gap: 5px;
-    list-style-type: none;
+  display: grid;
+  grid-template-columns: 90px;
+  gap: 5px;
+  list-style-type: none;
+  background-color: maroon;
 }
-  
+
 nav li {
-    text-align: center;
-    padding: 0px;
-    border: 0.5px solid lightgrey;
+  text-align: center;
+  padding: 0px;
+  border: 0.5px solid lightgrey;
+  background-color: green;
 }
-  
+
 nav li a {
-    text-decoration: none;
+  text-decoration: none;
+  color: maroon;
 }
 
-.h1 {
-    margin: auto;
+h1 {
+  text-align: center;
+  color: white;
 }
 
+.karacsonyfa {
+  width: 3000%;
+}
 
+.cim {
+  color: green;
+}
 
-
-
-
-
-
-
+.cimke {
+  color: maroon;
+}
 
 /* Táblázat kialakítása */
 
-.tabla {
-    border-collapse: collapse;
-    margin: auto;
+table {
+  border-collapse: collapse;
+  margin: auto;
 }
 
-#th, #td {
-    width: 50px;
-    height: 50px;
-    border: 1px solid darkgray;
+th, td {
+  width: 50px;
+  height: 50px;
+  border: 1px solid green;
 }
 
-#img {
-    width: 50px;
-    height: 50px;
+img {
+  width: 50px;
+  height: 50px;
 }
 
-#tr:nth-child(odd) #td:nth-child(even) {
-    background-color: lightgray;
+tr:nth-child(odd) td:nth-child(even) {
+  background-color: lightgreen;
 }
 
-#tr:nth-child(even) #td:nth-child(odd) {
-    background-color: lightgray;
+tr:nth-child(even) td:nth-child(odd) {
+  background-color: lightgreen;
 }
 
-#th {
-    width: 20px;
-    height: 20px;
-    background-color: dimgrey;
-    color: beige;
-    border: 1px solid dimgrey;
+th {
+  width: 20px;
+  height: 20px;
+  background-color: maroon;
+  color: red;
+  border: 1px solid green;
 }
 
-#th {
-    width: 10px;
+.th {
+  width: 10px;
 }
 
-
-
-
-
-
-
-
+/* Táblázat kialakítása */
 
 /* töréspontokat, media query */
 /* tablet nézet */
 @media screen and (max-width: 700px) {
-    body {
-        background-color: blue;
-        width: 100%;
-        font-size: 3vw;
-    }
-    main {
-        grid-template-columns: 3fr 1fr;
-        grid-template-areas:
-        "h h"
-        "n n"
-        "a b"
-        "j j"
-        "f f";
-    }
+  body {
+    background-color: blue;
+    width: 100%;
+    font-size: 3vw;
+  }
+  main {
+    grid-template-columns: 3fr 1fr;
+    grid-template-areas:
+      "h h"
+      "n n"
+      "a b"
+      "j j"
+      "f f";
+  }
 }
-  
+
 /* mobilon nézet */
 @media screen and (max-width: 450px) {
-    nav ul {
-        grid-template-columns: 1fr;
-    }
-    body {
-        background-color: blue;
-        width: 100%;
-        font-size: 5vw;
-    }
-    main {
-        grid-template-columns: 1fr;
-        grid-template-areas:
-        "h"
-        "n"
-        "a"
-        "j"
-        "b"
-        "f";
-    }
+  nav ul {
+    grid-template-columns: 1fr;
+  }
+  body {
+    background-color: blue;
+    width: 100%;
+    font-size: 5vw;
+  }
+  main {
+    grid-template-columns: 1fr;
+    grid-template-areas:
+      "h"
+      "n"
+      "a"
+      "j"
+      "b"
+      "f";
+  }
 }
