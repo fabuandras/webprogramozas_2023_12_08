@@ -1,8 +1,7 @@
 * {
-    /* az összes html elem */
     padding: 0;
     margin: 0;
-    box-sizing: border-box; /* szélességbe a padding és a border */
+    box-sizing: border-box;
 }
   
 body {
@@ -35,7 +34,6 @@ main {
 }
 
 article {
-    /*szülőelem*/ 
     display:grid; 
     grid-gap: 10px; 
     grid-template-columns: 1fr 1fr 1fr 1fr;
