@@ -99,14 +99,14 @@ nav ul {
 nav li {
   text-align: center;
   padding: 0px;
-  border: 0.5px solid lightgrey;
+  border: 2px solid white;
   background-color: green;
   border-radius: 5px;
 }
 
 nav li a {
   text-decoration: none;
-  color: maroon;
+  color: yellow;
 }
 
 h1 {
